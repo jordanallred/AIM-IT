@@ -1,0 +1,35 @@
+Max Iterations: 128
+1000
+1001
+1002
+1003
+1004
+1005
+1006
+1007
+1008
+1009
+1010
+1011
+Traceback (most recent call last):
+  File "/Users/jordanallred/Documents/Research/AIM-IT/Code/hyper-heuristics.py", line 1390, in <module>
+    solution = tree.search(max_it)
+  File "/Users/jordanallred/Documents/Research/AIM-IT/Code/hyper-heuristics.py", line 788, in search
+    new_node = self.expansion(node)
+  File "/Users/jordanallred/Documents/Research/AIM-IT/Code/hyper-heuristics.py", line 738, in expansion
+    new_node.text = new_node.heuristic(selected_node.text)
+  File "/Users/jordanallred/Documents/Research/AIM-IT/Code/Masking_Operations.py", line 2047, in mihaylova_masking
+    file_parts = obfuscate_all(input_text, file_parts, helpers)
+  File "/Users/jordanallred/Documents/Research/AIM-IT/Code/Masking_Operations.py", line 1890, in obfuscate_all
+    text.obfuscated_text = obfuscate_text(text.original_text, document_stats, helpers)
+  File "/Users/jordanallred/Documents/Research/AIM-IT/Code/Masking_Operations.py", line 1897, in obfuscate_text
+    text = apply_obfuscation(text, document_stats, helpers)
+  File "/Users/jordanallred/Documents/Research/AIM-IT/Code/Masking_Operations.py", line 1960, in apply_obfuscation
+    text = obfuscate_unique_words_count(text, document_stats)
+  File "/Users/jordanallred/Documents/Research/AIM-IT/Code/Masking_Operations.py", line 1258, in obfuscate_unique_words_count
+    spellcheck = SpellCheck()
+  File "/Users/jordanallred/Documents/Research/AIM-IT/Code/Masking_Operations.py", line 813, in __init__
+    trainingData = train(dictionaryWords)
+  File "/Users/jordanallred/Documents/Research/AIM-IT/Code/Masking_Operations.py", line 1675, in train
+    for f in features:
+KeyboardInterrupt
